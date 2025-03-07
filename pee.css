@@ -29,6 +29,7 @@ body  {background-color: rgb(0, 0, 0);
 .arrow {
     width: 40px;
     position: absolute;
+    z-index: 10;
 }
 
 .set {
