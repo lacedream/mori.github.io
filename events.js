@@ -4,10 +4,10 @@ const sets = document.querySelectorAll('.set');
 
 sets.forEach(image => {
     image.addEventListener('mouseover', () => {
-        image.style.opacity = "80%";  
+        image.style.opacity = "70%";  
     });
     image.addEventListener('mouseout', () => {
-        image.style.opacity = "2%";  
+        image.style.opacity = "6%";  
     });
 });
 
@@ -19,3 +19,4 @@ cookie.addEventListener("click", function() {
     cookie.src = "assets/bearcookieATED.png"
 
 })
+
