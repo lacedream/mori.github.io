@@ -7,7 +7,7 @@ sets.forEach(image => {
         image.style.opacity = "70%";  
     });
     image.addEventListener('mouseout', () => {
-        image.style.opacity = "6%";  
+        image.style.opacity = "3%";  
     });
 });
 
