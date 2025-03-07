@@ -1,0 +1,38 @@
+body  {background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;}
+
+
+.forest {
+    position:absolute;  
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:510px;
+    height: 383px;
+    border-radius: 5px;
+    border-color: rgb(156, 144, 125);
+    border-style: groove;
+    overflow: hidden;
+}
+
+#clock {
+    width: 29px;
+    height: auto;
+    position: absolute;
+    left: 30%;
+    top: 40%
+}
+
+.arrow {
+    width: 40px;
+    position: absolute;
+}
+
+.set {
+    opacity: 1%;
+    position: absolute;
+    height: 160px
+}
