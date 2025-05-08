@@ -7,7 +7,10 @@ const marine = document.getElementById('marine');
 const money = document.getElementById('money');
 const sera = document.getElementById('sera');
 const eeper = document.getElementById('eeper');
+const perla = document.getElementById('perla');
 const scaredy = document.getElementById('scaredy');
+const lockjaw = document.getElementById('lockjaw');
+const ow = document.getElementById('ow');
 const mouja = document.getElementById('mouja');
 const spongemaster = document.getElementById('spongemaster');
 const npc1textbox = document.getElementById('npc1textbox');
@@ -60,7 +63,7 @@ const npc1gatekeep = [
 "Uhm... well, normally I wouldn't let you through", 
 "Marine.. she's.. busy right now. I can't let you disturb her hard work!", 
 "But you see.. at this point I was supposed to tell you to collect seashells for me and I'll let you through",
-"What are the shells for..? None of your damn business! /////",
+"What are the shells for..? Heh.. none of your business! /////",
 "But anyway.. LaceDream ended up realizing he can't. realistically code that minigame in 4 days.",
 "So uh. I guess I'll let you through. Just dont disturb Marine, alright!?" ];
 
@@ -75,8 +78,44 @@ if(npc1){
     dialogarrow.addEventListener("click", function(){
         if (n === 6) {        npc1textbox.style.display = "none";
             entercave.style.display = "block";
-            npc1.style.left = "20%";
+            npc1.style.right = "60%";
 
+        }
+        else if (n === 1) {
+            npcportrait.src = "assets/npc/gatekeep1.png";
+        n = n+1;
+        
+        npc1text.textContent = npc1gatekeep[n];
+        }
+        else if (n === 0) {
+            npcportrait.src = "assets/npc/gatekeep4.png";
+        n = n+1;
+        
+        npc1text.textContent = npc1gatekeep[n];
+        }
+        else if (n === 2) {
+            npcportrait.src = "assets/npc/gatekeep3.png";
+        n = n+1;
+        
+        npc1text.textContent = npc1gatekeep[n];
+        }
+        else if (n === 3) {
+            npcportrait.src = "assets/npc/gatekeep2.png";
+        n = n+1;
+        
+        npc1text.textContent = npc1gatekeep[n];
+        }
+        else if (n === 4) {
+            npcportrait.src = "assets/npc/gatekeep3.png";
+        n = n+1;
+        
+        npc1text.textContent = npc1gatekeep[n];
+        }
+        else if (n === 5) {
+            npcportrait.src = "assets/npc/gatekeep4.png";
+        n = n+1;
+        
+        npc1text.textContent = npc1gatekeep[n];
         }
         else{
         n = n+1;
@@ -365,7 +404,7 @@ if(npc1){
             "But it's so dark- I couldn't see a thing!",
             "I swear there was a lightswitch hidden somewhere in the dark",
             "I was aimlessly touching around to find it... But then...",
-            "I thought I heard something moving..! I got SO scared, I ran as fast out of there as I could!",
+            "I saw some sort of ominous red light flash in my eyes!..! I got SO scared, I ran as fast out of there as I could!",
             "I'm so frustrated - I really wanted to see what secrets I could uncover in there",
             "But now I can't even think of going back... I felt like my heart was gonna burst",
             "Uh... If by any chance you're going in there...",
@@ -440,18 +479,48 @@ if(npc1){
                     "?!", 
                 "Eh?!", 
                 "Hiding..? We're not hiding! ..Anything!!", 
-                "", 
-                "(Dude... I don't think this is a good idea anymore...)",
-                "(Stffhkkup!!!)",
-                "But it's so dark- I couldn't see a thing!",
-                "I swear there was a lightswitch hidden somewhere in the dark",
-                "I was aimlessly touching around to find it... But then...",
-                "I thought I heard something moving..! I got SO scared, I ran as fast out of there as I could!",
-                "I'm so frustrated - I really wanted to see what secrets I could uncover in there",
-                "But now I can't even think of going back... I felt like my heart was gonna burst",
-                "Uh... If by any chance you're going in there...",
-                "Click around... Maybe you'll find the switch?..."];
+                "(Dude... I don't think this is a good idea anymore...)", 
+                "(Shhhtfkup!!)", 
+                "Y-Yeah.. We're just.. U-uh.. Hanging out...", 
+                "You know. Like guys do. Chilling out. In the darkness.",
+                "Y-yup! G..guys like us, w-we're not afraid of the d-dark...!",
+                "Pft... Unlike that wuss who was just here... Heh... Was that Lennie?",
+                "Man, the way they ran out when they saw my mask light up was SO funny!",
+                "They damn near tripped over trying to get away!",
+                "Hahah... anyway....",
+                "You can run along now...",
+                "Kinda rude of you to disturb our cool guy hangout time.",
+                "And stop trying to look behind me. There's nothing there...!",
+                "(Why do I keep getting pulled into his mess?) ",];
 
+                var f = 0;
+                if(lockjaw){
+                
+                    var light = new Audio('assets/music/Light_Switch.mp3');
+                    light.play();
+                    lockjaw.addEventListener("click", function() {
+                        npc1textbox.style.display = "block";
+                        npc1text.textContent = lockjawdialog[f];
+                    });
+                
+                    dialogarrow.addEventListener("click", function(){
+                        if (f === 15) {        npc1textbox.style.display = "none";
+                        }
+                        else if (f === 2) {
+                            
+                            npcportrait.src = "assets/npc/lockjawfake.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
+                        else{
+                        f = f+1;
+                        
+                        npc1text.textContent = lockjawdialog[f];}
+                
+                    }
+                )
+                
+                    };
                 
                 const fishfacts = [
                     "Sharks are the only fish with eyelids!", 
@@ -485,6 +554,18 @@ if(npc1){
                 )
                 
                     };
+
+
+                    
+                    if (ow){
+                        
+                        ow.addEventListener("click", function() {
+                            npc1textbox.style.display = "block";
+                        });
+                            dialogarrow.addEventListener("click", function(){
+                                npc1textbox.style.display = "none";
+                            })
+                        };
 
                     
                 const spongedialog = [
@@ -678,3 +759,4 @@ if(npc1){
                 )
                 
                     };
+
