@@ -11,6 +11,7 @@ const perla = document.getElementById('perla');
 const scaredy = document.getElementById('scaredy');
 const lockjaw = document.getElementById('lockjaw');
 const ow = document.getElementById('ow');
+const shellgal = document.getElementById('shellgal');
 const mouja = document.getElementById('mouja');
 const spongemaster = document.getElementById('spongemaster');
 const npc1textbox = document.getElementById('npc1textbox');
@@ -760,3 +761,75 @@ if(npc1){
                 
                     };
 
+
+                    const shellgaldialog = [
+                        "Hey, enjoying the beach? Are you searching for shells too?", 
+                    "I spent the whole afternoon searching the shore and found the most beautiful shells.", 
+                    "There's this beautiful iridescent big one that's just perfect!",
+                    "I'll definitely take it to Marine - maybe it'll strike some inspiration.",
+                    "The colors remind me of the sea and soft sand - so calming...", 
+                    "Anyway, before I knew it... The sun went down.", 
+                    "And the shore was illuminated in a gorgeous blue glow.", 
+                    "It's so beautiful, I decided to stay a while longer.", 
+                    "Oh, just make sure not to actually touch it... Bioluminescent plankton is acutally toxic.", 
+                    "Ahhh... well it was nice meeting you!", 
+                    "I can't wait to visit the Marine Boutique next Thursday.", 
+                     "On... the 15th, I think? Hopefully I'll see you there too?"];
+
+                     
+                var f = 0;
+                if(shellgal){
+                
+                    shellgal.addEventListener("click", function() {
+                        npc1textbox.style.display = "block";
+                        npc1text.textContent = shellgaldialog[f];
+                    });
+                
+                    dialogarrow.addEventListener("click", function(){
+                        if (f === 11) {        npc1textbox.style.display = "none";
+                        }
+                        else if (f === 1) {
+                            
+                            npcportrait.src = "assets/npc/shellgaltalk.png";
+                            f = f+1;
+                         npc1text.textContent = shellgaldialog[f];
+                        }
+                        else if (f === 3) {
+                            
+                            npcportrait.src = "assets/npc/shellgalclosed.png";
+                            f = f+1;
+                         npc1text.textContent = shellgaldialog[f];
+                        }
+                        else if (f === 4) {
+                            
+                            npcportrait.src = "assets/npc/shellgaltalk.png";
+                            f = f+1;
+                         npc1text.textContent = shellgaldialog[f];
+                        }
+                        else if (f === 6) {
+                            
+                            npcportrait.src = "assets/npc/shellgalclosed.png";
+                            f = f+1;
+                         npc1text.textContent = shellgaldialog[f];
+                        }
+                        else if (f === 7) {
+                            
+                            npcportrait.src = "assets/npc/shellgaltalk.png";
+                            f = f+1;
+                         npc1text.textContent = shellgaldialog[f];
+                        }
+                        else if (f === 8) {
+                            
+                            npcportrait.src = "assets/npc/shellgalsmile.png";
+                            f = f+1;
+                         npc1text.textContent = shellgaldialog[f];
+                        }
+                        else{
+                        f = f+1;
+                        
+                        npc1text.textContent = shellgaldialog[f];}
+                
+                    }
+                )
+                
+                    };
