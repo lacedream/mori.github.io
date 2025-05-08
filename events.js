@@ -508,9 +508,45 @@ if(npc1){
                     dialogarrow.addEventListener("click", function(){
                         if (f === 15) {        npc1textbox.style.display = "none";
                         }
-                        else if (f === 2) {
+                        else if (f === 1) {
                             
                             npcportrait.src = "assets/npc/lockjawfake.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
+                        else if (f === 3) {
+                            
+                            npcportrait.src = "assets/npc/lockjawstfu.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
+                        else if (f === 5) {
+                            
+                            npcportrait.src = "assets/npc/lockjawsilly.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
+                        else if (f === 7) {
+                            
+                            npcportrait.src = "assets/npc/lockjawsilly.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
+                        else if (f === 8) {
+                            
+                            npcportrait.src = "assets/npc/lockjawlaugh.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
+                        else if (f === 10) {
+                            
+                            npcportrait.src = "assets/npc/lockjawsilly.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
+                        else if (f === 13) {
+                            
+                            npcportrait.src = "assets/npc/lockjawpout.png";
                             f = f+1;
                          npc1text.textContent = lockjawdialog[f];
                         }
