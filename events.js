@@ -13,6 +13,7 @@ const lockjaw = document.getElementById('lockjaw');
 const ow = document.getElementById('ow');
 const shellgal = document.getElementById('shellgal');
 const mouja = document.getElementById('mouja');
+const phoebi = document.getElementById('phoebi');
 const spongemaster = document.getElementById('spongemaster');
 const npc1textbox = document.getElementById('npc1textbox');
 const npc2textbox = document.getElementById('npc2textbox');
@@ -771,7 +772,7 @@ if(npc1){
                     "Anyway, before I knew it... The sun went down.", 
                     "And the shore was illuminated in a gorgeous blue glow.", 
                     "It's so beautiful, I decided to stay a while longer.", 
-                    "Oh, just make sure not to actually touch it... Bioluminescent plankton is acutally toxic.", 
+                    "Oh, just make sure not to touch it... Bioluminescent plankton is acutally toxic.", 
                     "Ahhh... well it was nice meeting you!", 
                     "I can't wait to visit the Marine Boutique next Thursday.", 
                      "On... the 15th, I think? Hopefully I'll see you there too?"];
@@ -828,6 +829,119 @@ if(npc1){
                         f = f+1;
                         
                         npc1text.textContent = shellgaldialog[f];}
+                
+                    }
+                )
+                
+                    };
+
+                    
+
+                    const phoebidialog = [
+                        "Hm...? Is someone there? I can hear someone..", 
+                        "Oh, hi!! Who're you? Are you exploring?", 
+                    "This area is my faaavourite! You like it too, right?", 
+                    "The calming music~ and the way I can feel the little fishies swimming happily around me~",
+                    "Truly amazing!! I could live here forever and ever~~",
+                    "So.. are you looking for something? Someone?", 
+                    "Ah.. A book? Marine lost her book?", 
+                    "Sheesh, first her supplies being stolen, and now this?", 
+                    "Weeelll.. Morvoren might know something about it, theyre into books!", 
+                    "She lives within the purple coral reef, but uh..", "I heard they don't like to be disturbed, so...", 
+                    "Oh, oh! Maybe it's that creepy fish..! Guy!", 
+                    "Him and his lackey... Honestly, I think they're up to no good!", 
+                     "But don't worry! Lennie went to check that place out!", 
+                     "Or at least.... I think? I haven't heard anything from them in a while...", 
+                     "Hmm... Well anyway! I'm sure Marine's stuff will be found in no time!"];
+
+                     
+                var f = 0;
+                if(phoebi){
+                
+                    phoebi.addEventListener("click", function() {
+                        npc1textbox.style.display = "block";
+                        npc1text.textContent = phoebidialog[f];
+                    });
+                
+                    dialogarrow.addEventListener("click", function(){
+                        if (f === 15) {        npc1textbox.style.display = "none";
+                        }
+                        else if (f === 0) {
+                            
+                            npcportrait.src = "assets/npc/phoebihappy1.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 2) {
+                            
+                            npcportrait.src = "assets/npc/phoebihappy2.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 3) {
+                            
+                            npcportrait.src = "assets/npc/phoebihappy1.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 4) {
+                            
+                            npcportrait.src = "assets/npc/phoebismile.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 5) {
+                            
+                            npcportrait.src = "assets/npc/phoebigasp.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 6) {
+                            
+                            npcportrait.src = "assets/npc/phoebithink.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 7) {
+                            
+                            npcportrait.src = "assets/npc/phoebismile.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 8) {
+                            
+                            npcportrait.src = "assets/npc/phoebithink.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 10) {
+                            
+                            npcportrait.src = "assets/npc/phoebigasp.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 12) {
+                            
+                            npcportrait.src = "assets/npc/phoebismile.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 13) {
+                            
+                            npcportrait.src = "assets/npc/phoebithink.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else if (f === 14) {
+                            
+                            npcportrait.src = "assets/npc/phoebihappy1.png";
+                            f = f+1;
+                         npc1text.textContent = phoebidialog[f];
+                        }
+                        else{
+                        f = f+1;
+                        
+                        npc1text.textContent = phoebidialog[f];}
                 
                     }
                 )
