@@ -397,8 +397,8 @@ if(npc1){
             };
 
             const scaredydialog = [
-                "GAAAAAAAAAAH!?", 
-            "Oh.. Oh my god.. you scared me... Please don't creep up on me like that...", 
+                "E6UJD-GJG9U-IDT1M-IPSHZ-FLPH2-QIWBL !!!!", "GAAAAAAAAAAH!?", 
+            "Oh.. Oh my god.. you scared me so much I dropped my starpass code...", "Please don't creep up on me like that...", 
             "What am I doing here? Ah.. well.. just.. y'know...?", 
             "Uhm...", 
             "...This... This ship is pretty cool, isn't it...?",
@@ -421,49 +421,61 @@ if(npc1){
                 });
             
                 dialogarrow.addEventListener("click", function(){
-                    if (f === 13) {        npc1textbox.style.display = "none";
+                    if (f === 15) {        npc1textbox.style.display = "none";
                     }
-                    else if (f === 0) {
+                    else if (f === 1) {
                         
                         npcportrait.src = "assets/npc/lennie3.png";
                         f = f+1;
                      npc1text.textContent = scaredydialog[f];
                     }
-                    else if (f === 1) {
+                    else if (f === 3) {
                         
                         npcportrait.src = "assets/npc/lennie.png";
                         f = f+1;
                      npc1text.textContent = scaredydialog[f];
                     }
-                    else if (f === 2) {
+                    else if (f === 4) {
                         
                         npcportrait.src = "assets/npc/lennie4.png";
                         f = f+1;
                      npc1text.textContent = scaredydialog[f];
                     }
-                    else if (f === 3) {
+                    else if (f === 5) {
                         
                         npcportrait.src = "assets/npc/lennie5.png";
                         f = f+1;
                      npc1text.textContent = scaredydialog[f];
                     }
                     
-                    else if (f === 5) {
+                    else if (f === 7) {
                         
                         npcportrait.src = "assets/npc/lennie6.png";
                         f = f+1;
                      npc1text.textContent = scaredydialog[f];
                     }
                     
-                    else if (f === 8) {
+                    else if (f === 10) {
                         
                         npcportrait.src = "assets/npc/lennie7.png";
                         f = f+1;
                      npc1text.textContent = scaredydialog[f];
                     }
-                    else if (f === 11) {
+                    else if (f === 12) {
                         
                         npcportrait.src = "assets/npc/lennie3.png";
+                        f = f+1;
+                     npc1text.textContent = scaredydialog[f];
+                    }
+                    else if (f === 13) {
+                        
+                        npcportrait.src = "assets/npc/lennie2.png";
+                        f = f+1;
+                     npc1text.textContent = scaredydialog[f];
+                    }
+                    else if (f === 14) {
+                        
+                        npcportrait.src = "assets/npc/lennie7.png";
                         f = f+1;
                      npc1text.textContent = scaredydialog[f];
                     }
@@ -485,7 +497,7 @@ if(npc1){
                 "(Shhhtfkup!!)", 
                 "Y-Yeah.. We're just.. U-uh.. Hanging out...", 
                 "You know. Like guys do. Chilling out. In the darkness. Not doing. Crime.",
-                "Y-yup! G..guys like us, w-we're not afraid of the d-dark...!",
+                "Y-yup.. G..guys like us, w-we're not afraid of the d-dark...",
                 "Pft... Unlike that wuss who was just here... Heh... Was that Lennie?",
                 "Man, the way they ran out when they saw my mask light up was SO funny!",
                 "They damn near tripped over trying to get away!",
@@ -514,15 +526,39 @@ if(npc1){
                             f = f+1;
                          npc1text.textContent = lockjawdialog[f];
                         }
+                        else if (f === 0) {
+                            
+                            npcportrait.src = "assets/npc/smallspinescream.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
                         else if (f === 3) {
                             
                             npcportrait.src = "assets/npc/lockjawstfu.png";
                             f = f+1;
                          npc1text.textContent = lockjawdialog[f];
                         }
+                        else if (f === 2) {
+                            
+                            npcportrait.src = "assets/npc/smallspinesweat.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
+                        else if (f === 4) {
+                            
+                            npcportrait.src = "assets/npc/smallspine.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
                         else if (f === 5) {
                             
                             npcportrait.src = "assets/npc/lockjawsilly.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
+                        else if (f === 6) {
+                            
+                            npcportrait.src = "assets/npc/smallspine.png";
                             f = f+1;
                          npc1text.textContent = lockjawdialog[f];
                         }
@@ -547,6 +583,12 @@ if(npc1){
                         else if (f === 13) {
                             
                             npcportrait.src = "assets/npc/lockjawpout.png";
+                            f = f+1;
+                         npc1text.textContent = lockjawdialog[f];
+                        }
+                        else if (f === 14) {
+                            
+                            npcportrait.src = "assets/npc/smallspinesweat.png";
                             f = f+1;
                          npc1text.textContent = lockjawdialog[f];
                         }

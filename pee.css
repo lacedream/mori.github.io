@@ -67,3 +67,34 @@ body  {background-color: rgb(0, 0, 0);}
     overflow: hidden;
     z-index: 50;
 }
+
+#fish{
+  animation: fishright 7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 6s;
+}
+
+#fish2{
+  animation: fishleft 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+#fish3{
+  animation: fishleft 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 15s;
+}
+
+@keyframes fishright {
+  from {left: -20%;}
+  to {left: 300%;}
+}
+
+
+@keyframes fishleft {
+  from {left: 150%;}
+  to {left: -300%;}}
