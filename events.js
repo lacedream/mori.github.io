@@ -484,7 +484,7 @@ if(npc1){
                 "(Dude... I don't think this is a good idea anymore...)", 
                 "(Shhhtfkup!!)", 
                 "Y-Yeah.. We're just.. U-uh.. Hanging out...", 
-                "You know. Like guys do. Chilling out. In the darkness.",
+                "You know. Like guys do. Chilling out. In the darkness. Not doing. Crime.",
                 "Y-yup! G..guys like us, w-we're not afraid of the d-dark...!",
                 "Pft... Unlike that wuss who was just here... Heh... Was that Lennie?",
                 "Man, the way they ran out when they saw my mask light up was SO funny!",
